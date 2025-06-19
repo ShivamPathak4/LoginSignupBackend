@@ -14,7 +14,7 @@ const sendEmail = async (email, subject, body) => {
     });
 
     const info = await transporter.sendMail({
-      from: `"Study Notion Edtech" <${process.env.MAIL_USER}>`,
+      from: `"Ecommerce Internship Task" <${process.env.MAIL_USER}>`,
       to: email,
       subject: subject,
       html: body,
